@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="(FRONT FACADE).css">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Background with Centered Video</title>
+    <style>
+        
+        html, body {
+            margin: 0;
+            height: 260%;
+        }
+
+       
+        .video-container {
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            z-index: 999; 
+        }
+
+        
+        video {
+            width: 750px;
+            height: 800px;
+        }
+
+        
+        body {
+            margin: 0;
+            background-image: url('background.jpg'); 
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover; 
+            overflow-y: scroll; 
+            background-attachment: scroll; 
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay loop muted id="video" onclick="document.location='index (second phase).html'">
+            <source src="spin demo.mp4" type="video/mp4" />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    </body>
+</html>
+
+
+<html>
+  
+<body>
+  <pre>
+    <!--<h2>Button as a Links</h2>--%>
+
+    <%--<p>Click the button to go to the HTML tutorial.</p>--%>
+
+    <%--<button onclick="document.location='default.asp'">HTML Tutorial</button>-->
+</pre>  
+
+<script>
+let video = document.getElementById("video");
+video.addEventListener("click", () => {
+
+});
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+ 
+
+
